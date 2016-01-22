@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.genesis" name="Genesis" version="4.8.5" provider-name="lambda">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.pyxbmct" version="1.1.4" />
+		<import addon="script.module.requests" version="1.0.0" />
+		<import addon="script.module.metahandler" optional="true" />
+		<import addon="plugin.video.youtube" optional="true" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="startup" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">The origins of streaming</summary>
+		<description lang="en">Visit TVADDONS.ag for support</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<forum>http://forums.tvaddons.ag/forums/148-lambda-s-xbmc-addons</forum>
+		<source>https://offshoregit.com/lambda81/</source>
+		<website>https://offshoregit.com/lambda81/</website>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.icefilms"
+       name="Icefilms"
+       version="1.8.7"
+       provider-name="Eldorado (originator: anarchintosh)">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.simplejson" version="3.3.0"/>
+        <import addon="script.module.elementtree" />
+        <import addon="script.module.beautifulsoup" />
+        <import addon="script.module.metahandler" version="2.5.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.axel.downloader" version="0.2.1" />
+        <!--import addon="script.module.pyxbmct" version="1.1.2" /-->
+        <import addon="script.common.plugin.cache" />
+    </requires>
+    <extension point="xbmc.python.pluginsource"
+               library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Stream and download scene releases from the links listed on Icefilms.info</summary>
+        <description>Visit www.tvaddons.ag for support.
+
+Turns your XBMC into an instant free on-demand media-center. Stream and download to your library DVD and HD720p quality videos. Browse and search the library of over 77,000 videos with metadata and posters. Never experience the frustration of dead video links!</description>
+    </extension>
+</addon>
+
+<addon
+  id="plugin.video.SportsDevil"
+  version="1.8.8.0"
+  name="SportsDevil"
+  provider-name="MaxMustermann">
+  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension
+    point="xbmc.python.pluginsource"
+    library="default.py">
+   <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Play videos of different sports streaming sites</summary>
+    <description>Play videos of different sports streaming sites</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.zmovies"
+       name="Z-Movies"
+       version="0.1.9"
+       provider-name="[COLOR blue]X[/COLOR]unity[COLOR blue]T[/COLOR]alk">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.urlresolver" version="0.0.1"/>
+	<import addon="script.module.t0mm0.common" version="0.0.1"/>
+	<import addon="script.module.metahandler" version="1.0.2"/>
+	<import addon="script.common.plugin.cache" version="0.9.1"/>
+	<import addon="script.module.universal" version="0.0.1" />
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Z-Movies (zmovie.tv)</summary>
+    <description lang="en">Z-Movies (zmovie.tv) - Watch Movies Online for FREE.[CR][CR][COLOR orange]Support[/COLOR] @ [COLOR blue]www.[B]XUNITYTALK[/B].com[/COLOR][CR][CR][COLOR orange][B]Credits[/B][/COLOR][CR]     [COLOR blue]raspberry.pi:[/COLOR] Artwork (Icons and Fanart)</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+
+
+<addon id="repository.Tele-mix" name="Tele-Mix official Repo" version="1.1.0" provider-name="TeleMix">
+	<extension point="xbmc.addon.repository" name="Tele-Mix official Repo">
+		<info compressed="false">https://raw.githubusercontent.com/newbtc1/TeleMix/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/newbtc1/TeleMix/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/newbtc1/TeleMix/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Kodi-Mexico official Repo</summary>
+   		<description lang="en">Instala los Addons de Tele Mix.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+</addons>

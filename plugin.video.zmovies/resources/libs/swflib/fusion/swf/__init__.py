@@ -1,3 +1,0 @@
-"""
-SWF creation/parsing support.
-"""
